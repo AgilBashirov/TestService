@@ -1,0 +1,29 @@
+{
+  "Routes": [
+    {
+      "UpstreamPathTemplate": "/api/projectservice/{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamPathTemplate": "/api/v1/{everything}",
+      "DownstreamScheme": "https",
+      "SwaggerKey": "Product",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7172
+        }
+      ]
+    }
+  ],
+  "SwaggerEndPoints": [
+      {
+        "Key": "Product",
+        "Config": [
+          {
+            "Name": "Product",
+            "Version": "v1",
+            "Url": "https://localhost:7172/swagger/v1/swagger.json"
+          }
+        ]
+      }
+    ]
+}
